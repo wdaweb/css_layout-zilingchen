@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Fascinate&family=Monoton&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: 'DotGothic16', sans-serif;
+            font-family: 'Fascinate', cursive;
+            font-family: 'Monoton', cursive;
+            margin: 0;
+            padding: 0px;
+            list-style: none;
+            font-size: 15px;
+        }
+
+        body,
+        html {
+            height: 100%;
+            background: linear-gradient(transparent 70%, rgba(0, 0, 0, 0.3) 100%);
+        }
+
+        .container {
+            width: 100%;
+            margin: 0, auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+        }
+
+        .box {
+            width: 300px;
+            height: 500px;
+            border: 0.2px solid rgba(0, 0, 0, 0.02);
+            box-shadow:
+                0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
+            background: linear-gradient(90deg, white 90%, Gainsboro 100%);
+            /* background: linear-gradient(90deg, transparent 90%, rgba(0, 0, 0, 0.1) 100%); */
+            -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+            position: relative;
+            display: inline-block;
+            transform: all;
+            transition-duration: 1s;
+
+        }
+
+        .pict img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            position: absolute;
+            top: 10%;
+            left: 25%;
+        }
+
+        p {
+            padding: 20px;
+            position: absolute;
+            top: 200px;
+            text-align: center;
+            text-shadow: none;
+        }
+
+        div:hover {
+            transform: scale(1.5);
+            color: DarkRed;
+            background: rgb(182, 220, 255);
+            z-index: 1;
+        }
+
+        div p:hover {
+            transform: rotate(360deg);
+            color: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="box">
+            <div class="pict">
+                <img src=https://picsum.photos/100/100/?random=1>
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid adipisci rem vel unde! Eum aspernatur
+                nam, harum sequi, quam nemo minus temporibus </p>
+        </div>
+        <div class="box">
+            <div class="pict">
+                <img src=https://picsum.photos/100/100/?random=2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam fuga sint dolorem iure distinctio
+                aliquid, nam nostrum eligendi facilis minima </p>
+        </div>
+        <div class="box">
+            <div class="pict">
+                <img src=https://picsum.photos/100/100/?random=3>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam repudiandae nesciunt quasi
+                consequatur fuga? Neque aut, odit modi </p>
+        </div>
+        <div class="box">
+            <div class="pict">
+                <img src=https://picsum.photos/100/100/?random=4>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque ad in accusamus, nisi, quod, voluptate
+                aut nemo qui velit id possimus. </p>
+        </div>
+    </section>
+</body>
+
+</html>
